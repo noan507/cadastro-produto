@@ -1,0 +1,77 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #1a000f; /* Preto puxando pro vinho */
+    background-image: url(./299820-1920x1080-desktop-full-hd-hello-kitty-background-photo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 93vh;
+}
+
+.container {
+    max-width: 800px;
+    background-color: #590016; /* Vermelho escuro (bordô) */
+    padding: 20px;
+    margin: 50px auto;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.4);
+}
+
+h1 {
+    text-align: center;
+    color: #ffccd5; /* Rosa clarinho p/ contraste */
+}
+
+h1 img {
+    height: 95px;
+    width: 95px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, button {
+    padding: 8px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #8b0000; /* Vermelho sangue */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#limpar-tabela {
+    margin: 25px;
+    background-color: #b30000; /* Vermelho forte */
+    color: #f2f2f2;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #1f1f1f;
+}
+
+th, td {
+    border: 1px solid #ff003c; /* Borda vermelha neon */
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+th {
+    background-color: #a0002e; /* Vermelho mais escuro */
+    color: #ffffff;
+}

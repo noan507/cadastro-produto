@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap" rel="stylesheet">
+   <title>Cadastro de Produtos</title>
+
+   <style>
+      body {
+         font-family: 'Montserrat Alternates', sans-serif;
+         background-color: #1a000f;
+         background-image: url('fundo.jpg'); /* ⬅️ TROCA ESSE NOME pela sua imagem */
+         background-size: cover;
+         background-position: center;
+         background-repeat: no-repeat;
+         height: 93vh;
+         margin: 0;
+         padding: 0;
+      }
+
+      .container {
+         max-width: 800px;
+         background-color: rgba(89, 0, 22, 0.85); /* vermelho escuro com transparência */
+         padding: 20px;
+         margin: 50px auto;
+         border-radius: 8px;
+         box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+         color: white;
+      }
+
+      h1 {
+         text-align: center;
+         color: #ffccd5;
+      }
+
+      h1 img {
+         height: 95px;
+         width: 95px;
+         vertical-align: middle;
+         border-radius: 50%;
+      }
+
+      form {
+         display: flex;
+         flex-direction: column;
+         gap: 10px;
+      }
+
+      label {
+         font-weight: bold;
+      }
+
+      input, button {
+         padding: 8px;
+         font-size: 16px;
+         border-radius: 4px;
+         border: none;
+      }
+
+      input {
+         background-color: #fff;
+         color: #000;
+      }
+
+      button {
+         background-color: #8b0000;
+         color: white;
+         cursor: pointer;
+         transition: background 0.3s ease;
+      }
+
+      button:hover {
+         background-color: #b30000;
+      }
+
+      #limpar-tabela {
+         margin: 25px 0;
+         background-color: #a0002e;
+         font-size: 18px;
+         border-radius: 8px;
+      }
+
+      #Total {
+         text-align: center;
+         color: #fff;
+      }
+
+      table {
+         width: 100%;
+         border-collapse: collapse;
+         margin-top: 20px;
+         background-color: #1f1f1f;
+         color: white;
+      }
+
+      th, td {
+         border: 1px solid #ff003c;
+         padding: 10px;
+         text-align: center;
+      }
+
+      th {
+         background-color: #a0002e;
+         color: #fff;
+      }
+
+   </style>
+</head>
+<body>
+
+   <div class="container">
+      <h1>Cadastro de Produto: Noan e Pedro Gulin <img src="./1000092705.jpg" alt="Logo"></h1>
+      <form id="Produto-Form">
+         <label>Nome:</label>
+         <input type="text" id="Nome" required>
+         
+         <label>Preço:</label>
+         <input type="number" id="Preco" required>
+
+         <label>Quantidade:</label>
+         <input type="number" id="Quantidade" required>
+
+         <button type="submit">Adicionar Produto</button>
+      </form>
+
+      <button id="limpar-tabela">Limpar Tabela</button>
+      <h3 id="Total">Total em estoque: R$ 0.00</h3>
+      <table id="Tabela-Produtos">
+         <thead>
+            <tr>
+               <th>Nom
